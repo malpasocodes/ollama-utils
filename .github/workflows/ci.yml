@@ -30,6 +30,10 @@ jobs:
       run: |
         uv sync --dev
     
+    - name: Install dev tools
+      run: |
+        uv add --dev flake8 mypy
+    
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
