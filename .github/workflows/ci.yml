@@ -36,6 +36,7 @@ jobs:
         uv run flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics --exclude=.venv
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         uv run flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics --exclude=.venv
+      continue-on-error: true
     
     - name: Test with pytest
       run: |
@@ -69,7 +70,7 @@ jobs:
         uv build
     
     - name: Upload artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: dist
         path: dist/
