@@ -1,0 +1,8 @@
+include README.md
+include LICENSE
+include CLAUDE.md
+include pytest.ini
+recursive-include examples *.py *.md
+recursive-include tests *.py
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]

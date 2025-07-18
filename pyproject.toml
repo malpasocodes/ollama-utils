@@ -1,0 +1,61 @@
+[project]
+name = "ollama-utils"
+version = "0.1.0"
+description = "Python utilities for integrating Ollama with Streamlit and building LLM applications"
+authors = [
+    { name="Alfred Essa", email="malpaso@alfredcodes.com" }
+]
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.8"
+keywords = [
+    "ollama",
+    "llm",
+    "streamlit", 
+    "ai",
+    "chatbot",
+    "language-model",
+    "ml",
+    "nlp"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+    "Framework :: Streamlit",
+]
+dependencies = [
+    "requests>=2.32.4",
+]
+
+[project.optional-dependencies]
+streamlit = [
+    "streamlit>=1.40.1",
+]
+dev = [
+    "pytest>=7.0.0",
+    "black",
+    "flake8",
+    "mypy",
+    "build",
+    "twine",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+Homepage = "https://github.com/malpasocodes/ollama-utils"
+Repository = "https://github.com/malpasocodes/ollama-utils"
+Issues = "https://github.com/malpasocodes/ollama-utils/issues"
+Documentation = "https://github.com/malpasocodes/ollama-utils#readme"
