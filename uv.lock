@@ -1477,6 +1477,12 @@ streamlit = [
     { name = "streamlit", version = "1.47.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.9'" },
 ]
 
+[package.dev-dependencies]
+dev = [
+    { name = "build" },
+    { name = "twine" },
+]
+
 [package.metadata]
 requires-dist = [
     { name = "black", marker = "extra == 'dev'" },
@@ -1489,6 +1495,12 @@ requires-dist = [
     { name = "twine", marker = "extra == 'dev'" },
 ]
 provides-extras = ["streamlit", "dev"]
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "build", specifier = ">=1.2.2.post1" },
+    { name = "twine", specifier = ">=6.1.0" },
+]
 
 [[package]]
 name = "packaging"

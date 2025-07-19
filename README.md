@@ -1,7 +1,9 @@
 # Ollama Utils
 
+[![PyPI version](https://img.shields.io/pypi/v/ollama-utils.svg)](https://pypi.org/project/ollama-utils/)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Downloads](https://img.shields.io/pypi/dm/ollama-utils.svg)](https://pypi.org/project/ollama-utils/)
 
 A Python library providing convenient utilities for integrating [Ollama](https://ollama.com) with Streamlit and Python applications. This package offers a simple, pythonic interface to Ollama's API with built-in Streamlit components for rapid prototyping of LLM applications.
 
@@ -277,7 +279,20 @@ except Exception as e:
 
 ## Demo Application
 
-Run the included demo to test all features:
+### Option 1: Install from PyPI (Recommended)
+
+```bash
+# Install the package
+pip install ollama-utils
+
+# Download the demo
+curl -O https://raw.githubusercontent.com/malpasocodes/ollama-utils/main/demo_app.py
+
+# Run the demo
+streamlit run demo_app.py
+```
+
+### Option 2: Clone from GitHub
 
 ```bash
 git clone https://github.com/malpasocodes/ollama-utils.git
@@ -327,10 +342,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Changelog
 
-### 0.1.0
-- Initial release
-- Full HTTP API integration
-- Streaming support
-- Streamlit helpers
-- Model management functions
+### 0.1.0 (2025-01-18)
+- 🎉 **Successfully published to PyPI!**
+- Initial release with full HTTP API integration
+- Streaming support for real-time responses
+- Streamlit helpers for rapid UI development
+- Complete model management functions
 - Chat and generation capabilities
+- Comprehensive documentation and examples
+- Available on PyPI: `pip install ollama-utils`

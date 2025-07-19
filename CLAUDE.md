@@ -5,15 +5,22 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Project Overview
 This is a Python library that provides utilities for integrating Ollama (local LLM runtime) with Streamlit and Python applications. The library offers a convenient Python interface for Ollama's API endpoints.
 
+**Status**: ✅ Successfully published to PyPI as `ollama-utils` (v0.1.0)  
+**Install**: `pip install ollama-utils`
+
 ## Development Commands
 
 ### Setup and Installation
 ```bash
-# Install in development mode
+# Install in development mode with uv (recommended)
+uv sync --dev
+
+# Alternative: Install in development mode with pip
 pip install -e .
 
 # Build distribution
-python -m build
+uv build
+# or: python -m build
 ```
 
 ### Running Code
